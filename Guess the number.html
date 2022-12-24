@@ -1,0 +1,47 @@
+<html>
+    <body bgcolor="darkviolet">
+        <div class="jj"><h2 align="center">Guess the number</h2>
+            <input type="text"id="mcom">
+            <h3 class="m" align="center"></h3>
+            <h3 class="m1" align="center"></h3>
+            <p align="center"><button id="j2">submit</button></p>
+        </div>
+       
+
+
+     <style>
+         button{
+             font-size:20px;
+             border-radius:112px;
+             }
+         .jj{
+             width:400px;
+             height:400px;
+             background-color:hotpink;
+             border-radius:12px;
+             margin-left:480px;
+             margin-top:200px;
+             }
+           input{
+               font-size:20px;
+               border-radius:10px;
+              margin-left:60px;
+              margin-top:25px;
+           }  
+     </style>>
+        <script>
+var res=document.getElementsByClassName("m")
+var com=Math.floor(Math.random()*10);
+var l=document.getElementById("mcom").value;
+var l2=console.log(com)
+var res2=document.getElementsByClassName("m1")
+j2.addEventListener('click',function(){
+    res[0].innerHTML="no,its not that! the correct number was "+com;
+    if (l==com){   
+res[0].innerHTML="yes, Its correct"
+}
+})
+
+       </script>
+    </body>
+</html>
